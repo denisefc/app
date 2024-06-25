@@ -1,0 +1,2 @@
+mesa01;450;123;true;cerejeira;true;redonda;3
+mesa02;400;456;false;cerejeira;false;quadrada;1

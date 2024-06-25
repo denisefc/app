@@ -1,0 +1,374 @@
+{
+	"info": {
+		"_postman_id": "d451ed98-2056-4bb3-bbc1-878c1d0da6d2",
+		"name": "AppDenise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32431296"
+	},
+	"item": [
+		{
+			"name": "Armário",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/armario/lista",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"armario",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/armario/01",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"armario",
+								"01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"armario03\",\r\n    \"codigo\": 789,\r\n    \"preco\": 650.0,\r\n    \"disponivel\": true,\r\n    \"tipoMadeira\": \"cerejeira\",\r\n    \"puxadores\": true,\r\n    \"quantidadeGavetas\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/armario/incluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"armario",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/armario/04/excluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"armario",
+								"04",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mesa",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mesa/lista",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mesa",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mesa/01",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mesa",
+								"01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"mesa03\",\r\n    \"codigo\": 890,\r\n    \"preco\": 600.0,\r\n    \"disponivel\": true,\r\n    \"tipoMadeira\": \"cerejeira\",\r\n    \"vidro\": false,\r\n    \"formato\": \"retangular\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/mesa/incluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mesa",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mesa/02/excluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mesa",
+								"02",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MóvelMadeira",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/movelMadeira/lista",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movelMadeira",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/movelMadeira/01",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movelMadeira",
+								"01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/movelMadeira/incluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movelMadeira",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/movelMadeira/02/excluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movelMadeira",
+								"02",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedido",
+			"item": [
+				{
+					"name": "Lista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pedido/lista",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pedido",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/pedido/01",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pedido",
+								"01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"numeroPedido\": 4,\r\n        \"totalReais\": 1000.0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pedido/incluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pedido",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/armario/04/excluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"armario",
+								"04",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

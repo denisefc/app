@@ -1,0 +1,7 @@
+p;0001;950.00;20010-020
+a;armario01;500.00;123;true;cerejeira;true;4
+m;mesa01;450.00;123;true;cerejeira;true;redonda
+p;0002;600.00;22430-041
+a;armario02;600.00;456;false;cerejeira;false;6
+p;0003;400.00;20271-010
+m;mesa02;400.00;456;false;cerejeira;false;quadrada

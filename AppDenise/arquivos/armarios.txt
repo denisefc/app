@@ -1,0 +1,2 @@
+armario01;500.00;123;true;cerejeira;true;4;1
+armario02;600.00;456;false;cerejeira;false;6;2
