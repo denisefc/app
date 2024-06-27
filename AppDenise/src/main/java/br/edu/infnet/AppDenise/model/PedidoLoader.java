@@ -27,7 +27,6 @@ public class PedidoLoader implements ApplicationRunner {
     private ArmarioService armarioService;
     @Autowired
     private MesaService mesaService;
-
     @Autowired
     private ApiService apiService;
 

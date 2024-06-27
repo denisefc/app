@@ -1,2 +1,2 @@
-a;armario01;500;123;true;cerejeira;true;4;2
-m;mesa01;450;123;true;cerejeira;true;redonda;3
+a;armario01;500;789;true;cerejeira;true;4;2
+m;mesa01;450;912;true;cerejeira;true;redonda;3

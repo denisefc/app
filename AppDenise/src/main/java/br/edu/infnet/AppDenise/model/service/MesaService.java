@@ -1,6 +1,5 @@
 package br.edu.infnet.AppDenise.model.service;
 
-import br.edu.infnet.AppDenise.model.domain.Armario;
 import br.edu.infnet.AppDenise.model.domain.Mesa;
 import br.edu.infnet.AppDenise.model.repository.MesaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

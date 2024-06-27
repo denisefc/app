@@ -1,6 +1,5 @@
 package br.edu.infnet.AppDenise.model;
 
-import br.edu.infnet.AppDenise.model.domain.Armario;
 import br.edu.infnet.AppDenise.model.domain.Mesa;
 import br.edu.infnet.AppDenise.model.domain.Pedido;
 import br.edu.infnet.AppDenise.model.service.MesaService;
@@ -12,8 +11,6 @@ import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.HashMap;
-import java.util.Map;
 
 @Order(3)
 @Component
