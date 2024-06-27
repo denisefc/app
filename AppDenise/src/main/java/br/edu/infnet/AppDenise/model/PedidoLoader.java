@@ -5,7 +5,7 @@ import br.edu.infnet.AppDenise.model.domain.Endereco;
 import br.edu.infnet.AppDenise.model.domain.Mesa;
 import br.edu.infnet.AppDenise.model.domain.Pedido;
 import br.edu.infnet.AppDenise.model.service.ArmarioService;
-import br.edu.infnet.AppDenise.model.service.EnderecoService;
+import br.edu.infnet.AppDenise.model.service.ApiService;
 import br.edu.infnet.AppDenise.model.service.MesaService;
 import br.edu.infnet.AppDenise.model.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class PedidoLoader implements ApplicationRunner {
     private MesaService mesaService;
 
     @Autowired
-    private EnderecoService enderecoService;
+    private ApiService apiService;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
@@ -50,7 +50,7 @@ public class PedidoLoader implements ApplicationRunner {
 
             switch (campos[0].toUpperCase()) {
                 case "P":
-                    Endereco endereco = enderecoService.obterPorCep(campos[3]);
+                    Endereco endereco = apiService.obterPorCep(campos[3]);
 
                     pedido = new Pedido();
                     pedido.setNumeroPedido(Integer.valueOf(campos[1]));

@@ -25,11 +25,10 @@
 
 	<div class="container mt-3">
 
-		<span class="badge rounded-pill bg-primary">Pedido:
-			${qtdePedido}</span> <span class="badge rounded-pill bg-secondary">Móvel de Madeira:
-			${qtdeMovelMadeira}</span> <span class="badge rounded-pill bg-success">Armário:
-			${qtdeArmario}</span> <span class="badge rounded-pill bg-danger">Mesa:
-			${qtdeMesa}</span>
+		<span class="badge rounded-pill bg-primary">Pedido:${qtdePedido}</span>
+		<span class="badge rounded-pill bg-secondary">Móvel de Madeira:${qtdeMovelMadeira}</span>
+		<span class="badge rounded-pill bg-success">Armário:${qtdeArmario}</span>
+		<span class="badge rounded-pill bg-danger">Mesa:${qtdeMesa}</span>
 
 		<c:if test="${not empty listagem}">
 			<h2>AppVenda</h2>

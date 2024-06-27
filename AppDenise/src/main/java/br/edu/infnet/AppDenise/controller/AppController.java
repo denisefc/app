@@ -17,9 +17,10 @@ public class AppController {
     private ArmarioService armarioService;
     @Autowired
     private MesaService mesaService;
-
     @Autowired
     private EnderecoService enderecoService;
+    @Autowired
+    private ApiService apiService;
 
     @GetMapping(value = "/")
     public String telaHome(Model model){
@@ -72,6 +73,15 @@ public class AppController {
 
         model.addAttribute("titulo", "Listagem de Endereços");
         model.addAttribute("listagem", enderecoService.obterLista());
+
+        return telaHome(model);
+    }
+
+    @GetMapping(value = "/moeda/listagem")
+    public String listaMoedas(Model model){
+
+        model.addAttribute("titulo", "Listagem de Moedas");
+        model.addAttribute("listagem", apiService.obterMoedas());
 
         return telaHome(model);
     }
