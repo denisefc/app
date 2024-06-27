@@ -31,7 +31,8 @@ public class Pedido {
     @JsonManagedReference
     private List<MovelMadeira> moveisMadeira;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "idEndereco")
     private Endereco endereco;
 
     public Pedido() {
