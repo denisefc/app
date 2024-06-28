@@ -1,4 +1,4 @@
-package br.edu.infnet.AppDenise.model;
+package br.edu.infnet.AppDenise;
 
 import br.edu.infnet.AppDenise.model.domain.Mesa;
 import br.edu.infnet.AppDenise.model.domain.Pedido;
