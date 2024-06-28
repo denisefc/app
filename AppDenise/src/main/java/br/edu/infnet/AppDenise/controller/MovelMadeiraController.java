@@ -22,7 +22,7 @@ public class MovelMadeiraController {
         return movelMadeiraService.obterListaPorPedido(pedidoId);
     }
 
-    @GetMapping(value =  "/movelMadeira/{codigo}/codigo")
+    @GetMapping(value = "/movelMadeira/{codigo}/codigo")
     public MovelMadeira obterPorCodigo(@PathVariable int codigo) {
         return movelMadeiraService.obterPorCodigo(codigo);
     }
