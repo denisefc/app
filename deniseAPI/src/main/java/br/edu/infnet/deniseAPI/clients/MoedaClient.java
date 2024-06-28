@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.Collection;
 
-@FeignClient(url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/", name = "moedas")
+@FeignClient(url = "https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata", name = "moedas")
 public interface MoedaClient {
-    @GetMapping(value = "/Moedas?%24format=json")
+    @GetMapping(value = "/Moedas?%format=json")
     Collection<Moeda> obterMoedas();
 }
