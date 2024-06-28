@@ -19,7 +19,20 @@
 				<li class="nav-item"><a class="nav-link" href="/movelMadeira/listagem">Móveis de Madeira</a></li>
 				<li class="nav-item"><a class="nav-link" href="/armario/listagem">Armários</a></li>
 				<li class="nav-item"><a class="nav-link" href="/mesa/listagem">Mesas</a></li>
+				<li class="nav-item"><a class="nav-link" href="/endereco/listagem">Endereços</a></li>
 			</ul>
+
+			<form class="d-flex" action="/moeda/cotacao">
+			    <select class="form-control me-2" name="cotacao">
+			        <option value="USD">Dólar americano</option>
+			        <option value="AUD">Dólar australiano</option>
+			        <option value="CAD">Dólar canadense</option>
+			        <option value="EUR">Euro</option>
+			        <option value="GBP">Libra Esterlina</option>
+			    </select>
+
+			    <button class="btn btn-primary" type="submit">Cotação</button>
+			</form>
 		</div>
 	</nav>
 
@@ -29,6 +42,7 @@
 		<span class="badge rounded-pill bg-secondary">Móvel de Madeira:${qtdeMovelMadeira}</span>
 		<span class="badge rounded-pill bg-success">Armário:${qtdeArmario}</span>
 		<span class="badge rounded-pill bg-danger">Mesa:${qtdeMesa}</span>
+		<span class="badge rounded-pill bg-danger">Endereço:${qtdeEndereco}</span>
 
 		<c:if test="${not empty listagem}">
 			<h2>AppVenda</h2>
