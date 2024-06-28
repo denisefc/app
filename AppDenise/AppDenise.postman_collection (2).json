@@ -29,19 +29,45 @@
 					"response": []
 				},
 				{
-					"name": "Lista com puxadores",
+					"name": "Lista com ordem",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/armario/lista",
+							"raw": "localhost:8080/armario/listacomordem?orderBy=descricao",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"armario",
-								"lista"
+								"listacomordem"
+							],
+							"query": [
+								{
+									"key": "orderBy",
+									"value": "descricao"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista com puxadores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/armario/lista/true",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"armario",
+								"lista",
+								"true"
 							]
 						}
 					},
@@ -139,6 +165,31 @@
 					"response": []
 				},
 				{
+					"name": "Lista com ordem",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mesa/listacomordem?orderBy=descricao",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mesa",
+								"listacomordem"
+							],
+							"query": [
+								{
+									"key": "orderBy",
+									"value": "descricao"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Por id",
 					"request": {
 						"method": "GET",
@@ -211,14 +262,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/armario/lista",
+							"raw": "localhost:8080/mesa/lista/quadrada",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"armario",
-								"lista"
+								"mesa",
+								"lista",
+								"quadrada"
 							]
 						}
 					},
@@ -268,19 +320,40 @@
 					"response": []
 				},
 				{
-					"name": "Por código",
+					"name": "Por id do pedido",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/movelMadeira/01",
+							"raw": "localhost:8080/movelMadeira/1/lista",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"movelMadeira",
-								"01"
+								"1",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Por código",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/movelMadeira/789/codigo",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movelMadeira",
+								"789",
+								"codigo"
 							]
 						}
 					},
@@ -431,14 +504,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/movelMadeira/01",
+							"raw": "localhost:8080/pedido/1/numeroPedido",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"movelMadeira",
-								"01"
+								"pedido",
+								"1",
+								"numeroPedido"
 							]
 						}
 					},
@@ -455,14 +529,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/armario/lista",
+							"raw": "http://localhost:8081/20010-020/cep",
+							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
-								"armario",
-								"lista"
+								"20010-020",
+								"cep"
 							]
 						}
 					},
@@ -474,14 +549,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/armario/lista",
+							"raw": "localhost:8081/USD/cotacao",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8081",
 							"path": [
-								"armario",
-								"lista"
+								"USD",
+								"cotacao"
 							]
 						}
 					},
